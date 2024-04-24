@@ -13,7 +13,7 @@ const { MongoClient } = require("mongodb");
 const dbUser = process.env.DB_USER;
 const dbPassword = encodeURIComponent(process.env.DB_PASSWORD);
 const dbName = "richlab";
-const PORT = process.env.PORT || 8090;
+const PORT = process.env.PORT;
 
 const dburl = `mongodb+srv://${dbUser}:${dbPassword}@cluster0.xseitpb.mongodb.net/`;
 let db;
